@@ -21,27 +21,27 @@ header {
     padding: 10px;
     flex-wrap: wrap;
     box-shadow: #ddd;
-    margin-top:20px;
-    background-color: blanchedalmond;
+    background-color: rgb(179, 198, 231);
 }
 
 header nav a {
-    text-decoration: none;
+    text-decoration:none;
     font-size: 20px;
     display: inline-block;
+    border: #948788;
 }
 
 header nav a:hover {
     color: black;
 }
 
-.bgimage {
+section.bgimage {
     height: 100vh;
-    background: url('images/image1.jpg');
+    background-image:url("https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.webp?b=1&s=170667a&w=0&k=20&c=ymHzOpQBTrldJ5egITZZAgfc7PGmxZ2bP83eo-KjARM=");
     background-size: cover;
     position: relative;
-
 }
+
 .hero_title{
     font-size: 4.5rem;
 }
@@ -55,7 +55,6 @@ header nav a:hover {
     position: absolute;
     top: 50%;
     left: 50%;
-    background-color: rgb(156, 132, 25);
     text-align: center;
     transform: translate(-50%, -50%);
     color: whitesmoke;

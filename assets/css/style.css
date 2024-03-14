@@ -8,7 +8,7 @@
 
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(240, 247, 234);
+background-color: rgb(232, 232, 232);
 position: relative;
 display: flex;
 flex-direction: column;
@@ -61,6 +61,7 @@ section.bgimage {
 }
 
 main{
+    display: block;
 
 }
 
@@ -69,8 +70,8 @@ section{
 }
 
 .title{
-    border-right: black solid 3px;
     flex: 0 0 20%;
+    border-right: 0px solid black;
 
 }
 
@@ -90,12 +91,24 @@ section div img{
 }
 
 .about-content{
-    margin-left: 0px;
+    margin-left: 50px;
     margin-top: 40px;
-    border-bottom: 5px solid black ;
+    display: flex-wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+    height: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-
+.project{
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+align-items: center;
+gap: 16px;
+background-color: #fff;
+}
 
 .footer {
     padding: 30px;

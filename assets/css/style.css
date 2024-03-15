@@ -8,7 +8,7 @@
 
 body {
 font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(232, 232, 232);
+background-color: rgb(193, 203, 222);
 position: relative;
 display: flex;
 flex-direction: column;
@@ -87,13 +87,14 @@ section div img{
         padding: 10px;
         width: 150px;
         flex-direction: column;
+        margin-left: 100px;
     
 }
 
 .about-content{
     margin-left: 50px;
     margin-top: 40px;
-    display: flex-wrap;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     padding-bottom: 15px;
@@ -107,7 +108,27 @@ section div img{
     flex-direction: column;
 align-items: center;
 gap: 16px;
-background-color: #fff;
+background-color: #ffff
+}
+
+.project1{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 50px;
+    align-items: center;
+    height: fit-content;
+    /* background-color: blue; */
+
+}
+.project2{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    height: fit-content;
+    /* background-color: rgb(51, 51, 171); */
 }
 
 .footer {
@@ -118,6 +139,11 @@ background-color: #fff;
     background-color: #ad655b;
 }
 
+.contact-me{
+    margin-top: 50px;
+
+}
+
 @media screen and (max-width: 768px) { */
 /* Use flex-direction to stack the navbar, sidebar, and body */
 main,
@@ -125,13 +151,18 @@ main,
  flex-direction: column;
     }
 /* Make the sidebar stack below the body */
- aside {
-    order: 2; */
+ section {
+ flex-direction: column;
+ 
  } 
  
 /* Change the header background */
 header {
       background: #ad655b;
+    }
+
+    body{
+        background: white;
     }
 /* Change the navbar and footer background */
 / nav,

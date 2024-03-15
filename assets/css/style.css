@@ -1,61 +1,173 @@
-/* Reset CSS */
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Basic styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+font-family: Arial, Helvetica, sans-serif;
+background-color: rgb(193, 203, 222);
+position: relative;
+display: flex;
+flex-direction: column;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    box-shadow: #ddd;
+    background-color: rgb(179, 198, 231);
 }
 
-header h1 {
-    margin: 0;
+header nav a {
+    text-decoration:none;
+    font-size: 20px;
+    display: inline-block;
+    border: #948788;
 }
 
-nav ul {
-    list-style: none;
+header nav a:hover {
+    color: black;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+section.bgimage {
+    height: 100vh;
+    background-image:url("https://media.istockphoto.com/id/1419766496/photo/abstract-concepts-of-cybersecurity-technology-and-digital-data-protection-protect-internet.webp?b=1&s=170667a&w=0&k=20&c=ymHzOpQBTrldJ5egITZZAgfc7PGmxZ2bP83eo-KjARM=");
+    background-size: cover;
+    position: relative;
 }
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
+.hero_title{
+    font-size: 4.5rem;
 }
 
-section {
-    padding: 60px 0;
+.hero_desc{
+    font-size: 2rem;
 }
 
-section h2 {
-    margin-bottom: 30px;
-}
 
-.project {
-    margin-bottom: 20px;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
     text-align: center;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
 }
+
+main{
+    display: block;
+
+}
+
+section{
+    display: flex;
+}
+
+.title{
+    flex: 0 0 20%;
+    border-right: 0px solid black;
+
+}
+
+h2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+section div img{
+   
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+        width: 150px;
+        flex-direction: column;
+        margin-left: 100px;
+    
+}
+
+.about-content{
+    margin-left: 50px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15px;
+    height: fit-content;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.project{
+    display: flex;
+    width: 768px;
+    flex-direction: column;
+align-items: center;
+gap: 16px;
+background-color: #ffff
+}
+
+.project1{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    margin-top: 50px;
+    align-items: center;
+    height: fit-content;
+    /* background-color: blue; */
+
+}
+.project2{
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 50px;
+    align-items: center;
+    height: fit-content;
+    /* background-color: rgb(51, 51, 171); */
+}
+
+.footer {
+    padding: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    justify-content: end;
+    background-color: #ad655b;
+}
+
+.contact-me{
+    margin-top: 50px;
+
+}
+
+@media screen and (max-width: 768px) { */
+/* Use flex-direction to stack the navbar, sidebar, and body */
+main,
+    nav { */
+ flex-direction: column;
+    }
+/* Make the sidebar stack below the body */
+ section {
+ flex-direction: column;
+ 
+ } 
+ 
+/* Change the header background */
+header {
+      background: #ad655b;
+    }
+
+    body{
+        background: white;
+    }
+/* Change the navbar and footer background */
+ nav,
+    footer {
+      background-color: #948788;
+    }
+  }
+  
